@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Press+Start+2P&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    
+    font-family: "Inconsolata", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.2em;
+}
+
+.foto-perfil {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -35rem;
+    
+    
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.experiencia-item, .formacao-item {
+    margin-bottom: 1.5em;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-item h3, .formacao-item h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.periodo {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0.5em;
+}
+
+.habilidades-lista {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.habilidades-lista li {
+    background-color: #eee;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para telas menores (responsividade) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .habilidades-lista {
+        justify-content: center;
+    }
+}
